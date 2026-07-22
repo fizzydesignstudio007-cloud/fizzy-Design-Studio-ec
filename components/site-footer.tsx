@@ -1,4 +1,5 @@
-import { Mail, Waves } from "lucide-react"
+import Image from "next/image"
+import { Mail } from "lucide-react"
 import { InstagramIcon } from "@/components/instagram-icon"
 
 export function SiteFooter() {
@@ -8,8 +9,14 @@ export function SiteFooter() {
         <div className="flex flex-col items-start justify-between gap-10 md:flex-row">
           <div className="max-w-sm">
             <div className="flex items-center gap-2.5">
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                <Waves className="h-5 w-5" aria-hidden="true" />
+              <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-primary ring-1 ring-primary/20">
+                <Image
+                  src="/images/fizzy-logo.png"
+                  alt="Fizzy Design floral crescent moon logo"
+                  width={80}
+                  height={80}
+                  className="h-14 w-14 scale-125 object-cover object-top"
+                />
               </span>
               <span className="font-serif text-xl font-semibold tracking-tight text-primary">
                 Fizzy Design

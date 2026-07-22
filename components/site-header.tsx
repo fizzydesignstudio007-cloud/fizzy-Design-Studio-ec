@@ -1,7 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { Menu, X, Waves } from "lucide-react"
+import Image from "next/image"
+import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
@@ -17,8 +18,14 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-8">
         <a href="#home" className="flex items-center gap-2.5" aria-label="Fizzy Design home">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
-            <Waves className="h-5 w-5" aria-hidden="true" />
+          <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-primary ring-1 ring-primary/20">
+            <Image
+              src="/images/fizzy-logo.png"
+              alt="Fizzy Design floral crescent moon logo"
+              width={80}
+              height={80}
+              className="h-14 w-14 scale-125 object-cover object-top"
+            />
           </span>
           <span className="font-serif text-xl font-semibold tracking-tight text-primary">
             Fizzy Design

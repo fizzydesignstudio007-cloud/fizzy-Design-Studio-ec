@@ -49,14 +49,14 @@ export function Hero() {
         </div>
 
         <div className="relative">
-          <div className="overflow-hidden rounded-[2rem] border border-border bg-card shadow-xl shadow-primary/5">
+          <div className="overflow-hidden rounded-[2rem] border border-primary/20 bg-primary shadow-xl shadow-primary/10">
             <Image
-              src="/images/ocean-hero.png"
-              alt="Abstract ocean-inspired composition of flowing blue, seafoam, and sand colored waves"
+              src="/images/fizzy-logo.png"
+              alt="Fizzy Design logo — a floral crescent moon of lilies and leaves above the FIZZY wordmark"
               width={720}
               height={720}
               priority
-              className="h-full w-full object-cover"
+              className="h-full w-full object-contain"
             />
           </div>
         </div>
